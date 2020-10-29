@@ -1,21 +1,21 @@
 
-$(document).ready( function() {	
+$(document).ready(function () {
 
     // HOME PAGE HEIGHT
-    jQuery(window).load(function() {
-            // will first fade out the loading animation
+    jQuery(window).load(function () {
+        // will first fade out the loading animation
         jQuery(".loader").fadeOut();
-            // will fade out the whole DIV that covers the website.
+        // will fade out the whole DIV that covers the website.
         jQuery(".preloader").delay(1000).fadeOut("slow");
     });
 
-     
+
     // HOME PAGE HEIGHT
     if ($('.home, .portfolio-hero').length) {
         function fullhome() {
-            var hometext = $('.home, .portfolio-hero')            
-//            var homett = $('.hero-title').offset();
-//            $('.social').css('margin-top', homett.top)            
+            var hometext = $('.home, .portfolio-hero')
+            //            var homett = $('.hero-title').offset();
+            //            $('.social').css('margin-top', homett.top)            
             hometext.css({
                 "height": $(window).height() + "px"
             });
@@ -23,7 +23,7 @@ $(document).ready( function() {
         fullhome();
         $(window).resize(fullhome);
     }
-        
+
 
     // MAGNIFIC POPUP FOR PORTFOLIO PAGE
     // $('.magnif').magnificPopup({
@@ -31,15 +31,15 @@ $(document).ready( function() {
     //     gallery:{enabled:true},
     //     zoom:{enabled: true, duration: 300}
     // });
-    
-    
+
+
     // HOME TYPED JS
     if ($('.element').length) {
         $('.element').each(function () {
             $(this).typed({
-                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3')], 
-                loop: $(this).data('loop') ? $(this).data('loop') : false ,
-                backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000 ,                
+                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3')],
+                loop: $(this).data('loop') ? $(this).data('loop') : false,
+                backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000,
                 typeSpeed: 10,
             });
         });
@@ -48,12 +48,12 @@ $(document).ready( function() {
 
     // PORTFOLIO ISOTOPE
     if ($('.isotope_items').length) {
-         var $container = $('.isotope_items');
-         $container.isotope();
+        var $container = $('.isotope_items');
+        $container.isotope();
 
-        $('.portfolio-filter ul li').on("click", function(){
+        $('.portfolio-filter ul li').on("click", function () {
             $(".portfolio-filter ul li").removeClass("select-cat");
-            $(this).addClass("select-cat");              
+            $(this).addClass("select-cat");
             var selector = $(this).attr('data-filter');
             $(".isotope_items").isotope({
                 filter: selector,
@@ -62,9 +62,9 @@ $(document).ready( function() {
                     easing: 'linear',
                     queue: false,
                 }
-        });
+            });
             return false;
-        });      
+        });
     }
 
 
@@ -75,13 +75,13 @@ $(document).ready( function() {
         shine: true
     });
 
-    
-   // $('.site-btn').click(function(){
-   //      $('.isotope_items').load('port.html').fadeIn();
-   //  });
+
+    // $('.site-btn').click(function(){
+    //      $('.isotope_items').load('port.html').fadeIn();
+    //  });
 
 
-// PORTFOLIO CONTENT  
+    // PORTFOLIO CONTENT  
     $('#grid-container').cubeportfolio({
         layoutMode: 'grid',
         filters: '.portfolio-filter',
@@ -92,32 +92,32 @@ $(document).ready( function() {
         gapHorizontal: 30,
         singlePageAnimation: 'fade',
         mediaQueries: [{
-                width: 700,
-                cols: 3,
-            }, {
-                width: 480,
-                cols: 2,
-                options: {
-                    caption: '',
-                    gapHorizontal: 30,
-                    gapVertical: 20,
-                }
-            }, {
-                width: 320,
-                cols: 1,
-                options: {
-                    caption: '',
-                    gapHorizontal: 50,
-                }
-            }],            
+            width: 700,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                caption: '',
+                gapHorizontal: 30,
+                gapVertical: 20,
+            }
+        }, {
+            width: 320,
+            cols: 1,
+            options: {
+                caption: '',
+                gapHorizontal: 50,
+            }
+        }],
         singlePageCallback: function (url, element) {
             var t = this;
             $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'html',
-                    timeout: 30000
-                })
+                url: url,
+                type: 'GET',
+                dataType: 'html',
+                timeout: 30000
+            })
                 .done(function (result) {
                     t.updateSinglePage(result);
                 })
@@ -125,14 +125,14 @@ $(document).ready( function() {
                     t.updateSinglePage('AJAX Error! Please refresh the page!');
                 });
         },
-            plugins: {
-                loadMore: {
-                    element: '#port-loadMore',
-                    action: 'click',
-                    loadItems: 3,
-                }
+        plugins: {
+            loadMore: {
+                element: '#port-loadMore',
+                action: 'click',
+                loadItems: 3,
             }
-    }); 
+        }
+    });
 
 
     //TWITTER
@@ -145,10 +145,10 @@ $(document).ready( function() {
             , count: 10
 
         }, function () {
-            setInterval(function() {
+            setInterval(function () {
                 var item = $('.widget-twitter .tweet ul').find('li:first');
 
-                item.animate( {marginLeft: '-220px', 'opacity': '0'}, 500, function() {
+                item.animate({ marginLeft: '-220px', 'opacity': '0' }, 500, function () {
                     $(this).detach().appendTo('.widget-twitter .tweet ul').removeAttr('style');
                 });
             }, 5000);
@@ -158,6 +158,7 @@ $(document).ready( function() {
 
     // RESPONSIVE MENU
     $('.new').click(function(){
+
         $('body').toggleClass('full-open');
         $('header').toggleClass('show');        
         $('header').slideDown("slow");
@@ -214,7 +215,8 @@ $(document).ready( function() {
                     , [992, itemsDesktopSmallData]
                     , [1199, itemsDesktopData]
                 ]
-            , });
+                ,
+            });
         });
     }
 

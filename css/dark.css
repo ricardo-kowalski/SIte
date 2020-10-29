@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    background: #1f1f1f !important;
+    background: #323545 !important;
 }
 
 #particles-js {
@@ -13,43 +13,43 @@
 }
 
 .cbp-l-loadMore-link {
-    color: #fff !important;
+    color: #e6e8f4 !important;
 }
 
 .site-btn {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .nav-icon span {
-    background: #fff;
+    background: #e6e8f4;
 }
 
 .home .home-content .social a {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .home .home-content .hero-title {
-    color: #fff;
-}
-
-.home .home-content p span {
-    color: #fff;
-}
-
-.portfolio .portfolio-filter .cbp-filter-item-active {
-    color: #fff !important;
-}
-
-.classic-title {
     color: #ffffff;
 }
 
+.home .home-content p span {
+    color: #e6e8f4;
+}
+
+.portfolio .portfolio-filter .cbp-filter-item-active {
+    color: #e6e8f4 !important;
+}
+
+.classic-title {
+    color: #e6e8f4;
+}
+
 footer {
-    background: #000000;
+    background: #323545;
 }
 
 footer .getintouch strong {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .full-menu {
@@ -57,15 +57,15 @@ footer .getintouch strong {
 }
 
 .full-menu .full-inner nav ul li a {
-    color: #ffffff;
+    color: #e6e8f4;
 }
 
 .full-menu .full-inner .full-contact {
-    background: #000000;
+    background: #323545;
 }
 
 .full-menu .full-inner .full-contact ul li {
-    color: #ffffff;
+    color: #e6e8f4;
 }
 
 .full-menu .full-inner .full-contact ul li .social a {
@@ -73,14 +73,14 @@ footer .getintouch strong {
 }
 
 .full-open .nav-icon span {
-    background: #fff !important;
+    background: #e6e8f4 !important;
 }
 
 .titlebar .page-title {
     font-size: 120px;
     font-weight: 900;
     letter-spacing: -2px;
-    color: #fff;
+    color: #e6e8f4;
 }
 
 hr{
@@ -89,7 +89,7 @@ hr{
 }
 
 .about .about-text .subtitle {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .about .about-text p {
@@ -98,11 +98,11 @@ hr{
 
 .owl-carousel.work-areas .area i:before {
     font-size: 100px;
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .owl-carousel.work-areas .area .title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .owl-carousel.work-areas .area p {
@@ -111,11 +111,11 @@ hr{
 
 .owl-theme .owl-controls .owl-page span{
     opacity: 1;
-    background: #fff;
+    background: #e6e8f4;
 }
 
 .news-box .title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .news-box p {
@@ -123,21 +123,21 @@ hr{
 }
 
 .news-box .information{
-    color: #fff;
+    color: #e6e8f4;
 }
 
 input.inp {
-    border: solid 3px #ffffff;
+    border: solid 3px #e6e8f4;
     background: none;
-    color: #fff;
+    color: #e6e8f4;
 }
 
 textarea.form-message {
     width: 100%;
     margin-bottom: 30px;
-    border: solid 3px #ffffff;
+    border: solid 3px #e6e8f4;
     background: none;
-    color: #fff;
+    color: #e6e8f4;
 }
 
 p {
@@ -149,28 +149,28 @@ p {
 }
 
 .site-btn2 {
-    background: #ffffff;
-    color: #000 !important;
+    background: #e6e8f4;
+    color: #323545 !important;
 }
 
 .site-btn2:hover{
-    color: #fff !important;
+    color: #e6e8f4 !important;
 }
 
 .news-article .title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .news-article .information {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .news-article blockquote {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .subtitle {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .article-comments .comment {
@@ -186,7 +186,7 @@ p {
 }
 
 .widget-latest-news ul li p {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .widget-latest-news ul li {
@@ -194,7 +194,7 @@ p {
 }
 
 .widget-categories ul li a {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .widget-categories ul li {
@@ -202,20 +202,20 @@ p {
 }
 
 .search input {
-    color: #fff;
+    color: #e6e8f4;
     background: none;
 }
 
 .search {
-    border: solid 3px #fff;
+    border: solid 3px #e6e8f4;
 }
 
 .search .search-icon button {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .news-big .news-box .title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .news-big .news-box p {
@@ -227,19 +227,19 @@ p {
 }
 
 .portfolio-single .title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .portfolio-single .information li span {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .portfolio-nav .port-next .nav-title {
-    color: #fff;
+    color: #e6e8f4;
 }
     
 .portfolio-nav .port-next .next-title {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .portfolio-single.type-2 .subtitle {
@@ -251,19 +251,19 @@ p {
 }
 
 .preloader .loader {
-    border: 4px solid #fff;
+    border: 4px solid #e6e8f4;
 }
 
 .preloader .loader .loader-inner {
-    background-color: #fff;
+    background-color: #e6e8f4;
 }
 
 .preloader {
-    background-color: #000;
+    background-color: #323545;
 }
 
 .tweet ul li {
-    color: #fff;
+    color: #e6e8f4;
 }
 
 .tweet ul li span.date {
