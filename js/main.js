@@ -157,11 +157,35 @@ $(document).ready( function() {
 
 
     // RESPONSIVE MENU
-    $('.nav-icon').click(function(){
+    $('.new').click(function(){
         $('body').toggleClass('full-open');
+        $('header').toggleClass('show');        
+        $('header').slideDown("slow");
+    });
+    
+    //TOP MENU
+    var header_show = false;
+    var lastScrollTop = 0;
+    $(window).scroll(function(event){
+        console.log($(window).scrollTop());
+            
+            $('header').addClass('show');
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop){
+                $('header').slideUp("slow");
+            } else {
+                $('header').slideDown("slow");
+            }
+            lastScrollTop = st;
+            if($(window).scrollTop() <= 0){
+                $('header').removeClass('show');
+                $('header').slideDown("slow");
+                header_show = false;
+            }
     });
 
-
+    //$('header').addClass('show');
+    //$('header').slideUp('slow');
     // OWL CAROUSEL GENERAL JS
     var owlcar = $('.owl-carousel');
     if (owlcar.length) {
