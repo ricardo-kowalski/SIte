@@ -30,12 +30,18 @@ body{
 }
 
 header{
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 5;
+    vertical-align: middle;
 }
 
+.show{
+    background-color: #4f535f;
+    top:0;
+}
 /* Preloader */
 
 
@@ -758,9 +764,7 @@ header.white .nav-icon span {
 
 }
 
-.tweet{
 
-}
 
 .tweet ul {
     width: 99999px;
@@ -921,7 +925,26 @@ header.white .nav-icon span {
     transition: all ease 0.7s 1.4s;
 }
 
+/*Menu Superior*/
+.item-menu{
+    float: right;
+    width: auto;
+    margin: 30px;
+}
 
+.item-menu a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.item-menu new {
+    color: white;
+    font-size: 20px;
+}
+.logo-menu{
+    margin:35px;
+}
 /* Nav Icon */
 
 .nav-icon span {
