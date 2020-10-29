@@ -41,7 +41,7 @@ header{
 }
 
 .show{
-    background-color: #4f535f;
+    background-color: #3c457d;
     top:0;
 }
 /* Preloader */
@@ -931,7 +931,7 @@ header.white .nav-icon span {
 .item-menu{
     float: right;
     width: auto;
-    margin: 30px;
+    margin: 20px;
 }
 
 .item-menu a {
@@ -2118,7 +2118,7 @@ a:hover{
 .team-member figure:hover figcaption {
   visibility: visible;
   color: #fff;
-  background: rgba(230, 78, 62, 0.9);
+  background: #b1bbec;
   /* Primary color, can be changed via colors.css */
   
   height: 100%;
